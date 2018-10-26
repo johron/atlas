@@ -5,3 +5,5 @@ set(src_files
     "src/test.h")
 
 add_library(${name} ${src_files})
+
+set_target_properties(${name} PROPERTIES FOLDER "Atlas")

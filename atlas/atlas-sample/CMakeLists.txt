@@ -6,3 +6,5 @@ set(src_files
 add_executable(${name} ${src_files})
 
 target_link_libraries(${name} "atlas-core")
+
+set_target_properties(${name} PROPERTIES FOLDER "Atlas")

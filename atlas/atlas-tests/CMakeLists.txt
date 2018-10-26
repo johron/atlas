@@ -4,11 +4,11 @@ set(src_files
     "src/tests.cpp")
 
 
-#find_package(GTest REQUIRED)
 
 add_executable(${name} ${src_files})
+#gtest_add_tests(${name})
 
-#enable_testing()
-#target_link_libraries(${name} GTest::GTest)
+target_link_libraries(${name} gtest_main)
 #gtest_discover_tests(${name})
 
+set_target_properties(${name} PROPERTIES FOLDER "Atlas")
