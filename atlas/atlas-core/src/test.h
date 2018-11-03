@@ -1,6 +1,24 @@
+#pragma once
+
 namespace atlas {
-class sample {
+class application {
 public:
-	int get_nr() const;
+};
+
+class engine {
+public:
+	bool running() const {
+		return true;
+	}
+
+	void update() {
+	}
+
+	void render() {
+	}
+
+	int terminate() {
+		return 0;
+	}
 };
 }  // namespace atlas

@@ -1,10 +1,13 @@
 set(name "atlas-core")
 
+set(include_files
+	"include/atlas-core.h")
+
 set(src_files
     "src/test.cpp"
     "src/test.h")
 
-add_library(${name} ${src_files})
+add_library(${name} ${include_files} ${src_files})
 
 find_package(SDL2 REQUIRED)
 find_package(SDL2_image REQUIRED)
